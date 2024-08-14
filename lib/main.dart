@@ -11,6 +11,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(
       title: Text('Login page' , style: TextStyle(fontWeight: FontWeight.bold),),
-    ),);
+    ),
+    body: Row(
+      children: [
+        Container(child:
+        Text('Welcom to our app' ,
+          style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold , color: Colors.black),),),
+      ],
+    ),
+    );
   }
 }
