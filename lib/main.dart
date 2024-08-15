@@ -1,30 +1,27 @@
 import 'package:flutter/material.dart';
-//16-8-2024
-void main(){
-  runApp(MaterialApp(home: Home(),));
-}
-class Home extends StatelessWidget {
-  const Home({super.key});
 
+void main() => runApp(MaterialApp(
+  home: Home(),
+));
+
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('Login page' , style: TextStyle(fontWeight: FontWeight.bold),),
-    ),
-        body:
-        Center(
-          child: Image.asset('https://miro.medium.com/v2/resize:fit:1200/1*5JFH1YSl7NHZ4kPghfXfEg.jpeg'),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+          title: Text('my first app'),
+          centerTitle: true,
+          backgroundColor: Colors.red[600]
+      ),
+      body: Center(
+        child: Image.asset('assets/space-3.jpg'),
+      ),
 
-    //     Padding(
-    //     padding: const EdgeInsets.fromLTRB(70, 200, 0, 0),
-    // child: Row(
-    // children: [
-    // Container(child:
-    // Text('Welcom to our app' ,
-    // style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold , color: Colors.black),),),
-    // ],
-    // ),
-    // ),
+
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: Colors.red[600],
+      //   child: Text('click'),
+      // ),
     );
   }
 }
