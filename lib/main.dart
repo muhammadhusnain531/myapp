@@ -14,7 +14,16 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600]
       ),
       body: Center(
-        child: Image.asset('assets/space-3.jpg'),
+        child: IconButton(onPressed: (
+
+            ){
+          print('Press');
+        },
+        icon: Icon(Icons.email),
+          color: Colors.lightBlue,
+        ),
+
+       // child: Image.asset('assets/space-3.jpg'),
       ),
 
 
