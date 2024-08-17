@@ -14,16 +14,22 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600]
       ),
       body: Center(
-        child: IconButton(onPressed: (
+        child: ElevatedButton(
+          onPressed: (){
+          }, child: Text('Click me', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),)
+          ,
+        )
 
-            ){
-          print('Press');
-        },
-        icon: Icon(Icons.email),
-          color: Colors.lightBlue,
-        ),
+        // IconButton(onPressed: (
+        //
+        //     ){
+        //   print('Press');
+        // },
+        //   icon: Icon(Icons.email),
+        //   color: Colors.lightBlue,
+        // ),
 
-       // child: Image.asset('assets/space-3.jpg'),
+        // Image.asset('assets/looo.jpg'),
       ),
 
 
